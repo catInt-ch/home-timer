@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="logo" alt="catInt logo" src="./assets/catInt_logo.png">
+    <TimerContainer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TimerContainer from './components/TimerContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TimerContainer
   }
 }
 </script>
 
 <style>
+body {
+  background-color: #000000;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #FF9398;
   margin-top: 60px;
+}
+
+.logo {
+  height: 10rem;
 }
 </style>
