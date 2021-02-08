@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-content>
-      <div id="app" class="pt-8 black">
+    <v-main class="light-black">
+      <div id="app" class="pt-8 light-black">
         <img class="logo" alt="catInt logo" src="./assets/catInt_logo.png">
         <TimerContainer/>
       </div>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -21,8 +21,8 @@ export default {
 </script>
 
 <style>
-body {
-  background-color: #000000;
+.light-black {
+  background-color: #1A1A18;
 }
 
 #app {
