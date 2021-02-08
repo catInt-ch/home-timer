@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="time">{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h2>
+    <h2 class="text-h2 mt-8 cat-int-light">{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h2>
   </div>
 </template>
 
@@ -42,8 +42,7 @@ export default {
 </script>
 
 <style scoped>
-.time {
-  font-size: 8rem;
+.cat-int-light {
   color: #FFC6C6;
 }
 </style>

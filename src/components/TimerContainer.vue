@@ -1,6 +1,6 @@
 <template>
   <div class="timer">
-    <h1 class="timer-title">Home Timer</h1>
+    <h1 class="text-h1">Home Timer</h1>
     <Timer/>
   </div>
 </template>

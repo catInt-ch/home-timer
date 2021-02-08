@@ -1,8 +1,12 @@
 <template>
-  <div id="app">
-    <img class="logo" alt="catInt logo" src="./assets/catInt_logo.png">
-    <TimerContainer/>
-  </div>
+  <v-app>
+    <v-content>
+      <div id="app" class="pt-8 black">
+        <img class="logo" alt="catInt logo" src="./assets/catInt_logo.png">
+        <TimerContainer/>
+      </div>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
@@ -27,7 +31,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #FF9398;
-  margin-top: 60px;
 }
 
 .logo {
