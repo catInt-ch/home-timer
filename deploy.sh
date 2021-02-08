@@ -12,5 +12,3 @@ git add -A
 git commit -m 'deploy'
 git push -f git@github.com:catInt-ch/home-timer.git master:gh-pages
 cd -
-
-chmod +x deploy.sh
