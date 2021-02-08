@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="text-h3 text-md-h2 mt-8 cat-int-light">{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h2>
+    <h2 class="text-h3 text-md-h2 mt-4 mt-md-8 cat-int-light">{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h2>
   </div>
 </template>
 
