@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-main class="light-black">
-      <div id="app" class="pt-8 light-black">
+    <v-main class="light-black flex flex-wrap justify-center align-center">
+      <div id="app" class="light-black">
         <img class="logo" alt="catInt logo" src="./assets/catInt_logo.png">
         <TimerContainer/>
       </div>
