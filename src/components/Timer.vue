@@ -1,6 +1,16 @@
 <template>
   <div>
-    <h2 class="text-h3 text-md-h2 mt-8 cat-int-light">{{ days }} : {{ hours }} : {{ minutes }} : {{ seconds }}</h2>
+    <v-container class="mt-8">
+      <v-row justify="center">
+        <v-col
+            v-for="time in times"
+            :key="time.label" xs="4"
+            class="text-h3 text-md-h2 ma-1 rounded-lg d-inline cat-int-light-background light-black-color">
+          <div> {{ time.value }} </div>
+          <div class="text-caption"> {{ time.label }} </div>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -9,7 +19,7 @@ export default {
   name: "Timer",
   data() {
     return {
-      timeBetween: null,
+      timeBetween: null
     }
   },
   mounted() {
@@ -31,18 +41,34 @@ export default {
     seconds: function () {
       const seconds = (Math.floor((this.timeBetween) / 1000) % 60).toString()
       return "0".concat(seconds).slice(-2)
+    },
+    times: function () {
+      return [
+        { label: 'TAGE',      value: this.days },
+        { label: 'STUNDEN',   value: this.hours },
+        { label: 'MINUTEN',   value: this.minutes },
+        { label: 'SEKUNDEN',  value: this.seconds }
+      ]
     }
   },
   methods: {
     countdown() {
-      this.timeBetween = new Date(2021, 1, 26, 9, 0) - new Date()
+      this.timeBetween = new Date(2021, 1, 26, 8, 30) - new Date()
     }
   },
 }
 </script>
 
 <style scoped>
-.cat-int-light {
+.cat-int-light-color {
   color: #FFC6C6;
+}
+
+.cat-int-light-background {
+  background-color: #FFC6C6;
+}
+
+.light-black-color {
+  color: #1A1A18;
 }
 </style>
