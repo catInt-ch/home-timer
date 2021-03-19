@@ -53,7 +53,7 @@ export default {
   },
   methods: {
     countdown() {
-      this.timeBetween = new Date(2021, 1, 26, 8, 30) - new Date()
+      this.timeBetween = new Date(2021, 3, 13, 8, 30) - new Date()
     }
   },
 }
